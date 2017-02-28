@@ -8,3 +8,5 @@ How to use it:
 - Profit!
 
 I also included the duckyscript version in case you're using a rubber ducky.
+
+To stop it, just close "Microsoft ® Windows Based Script Host" in task manager or reboot the computer.
