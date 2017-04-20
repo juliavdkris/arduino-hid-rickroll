@@ -1,7 +1,7 @@
 Arduino HID rickroll
 ======
 
-###How to use it:
+### How to use it:
 - OPTIONAL: Change the mp3 file in rickroll.vbs (line 5). If you do this, you'll have to change the rickroll.vbs download link in arduino-hid-rickroll.ino (line 31)
 - OPTIONAL: If you *REALLY* want to be an asshole, you can comment line 39 out (arduino-hid-rickroll.ino) and uncomment line 40. This adds the VBS file to startup.
 - Uncomment either line 40 or line 49 to 49 (depending on if your Arduino has a button soldered on it or not)
@@ -9,7 +9,7 @@ Arduino HID rickroll
 - ???
 - Profit!
 
-###Features:
+### Features:
 - It's rickrolls people. Duh.
 - Add to startup (if you really want to be an asshole)
 - Volume up script. This stops the victim from just muting their computer (they can obviously still disconnect the speaker if they have a PC). Credits for this script go to BlueArduino20. He made a [modded version of my project](https://github.com/BlueArduino20/Rickroll-MODDED/).
