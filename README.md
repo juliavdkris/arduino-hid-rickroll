@@ -16,6 +16,6 @@ Arduino HID rickroll
 
 I also included the duckyscript version in case you're using a rubber ducky.
 
-To stop it, just close `Microsoft ® Windows Based Script Host` in task manager or reboot the computer. If you want to (slightly) un-asshole yourself and remove the VBS file from startup, execute `reg delete HKLM\Software\Microsoft\Windows\CurrentVersion\Run /v TotallyNotShadyStartupItem` as administrator.
+To stop it, just close `Microsoft ® Windows Based Script Host` in task manager or reboot the computer. If you want to (slightly) un-asshole yourself and remove the VBS file from startup, execute `reg delete HKLM\Software\Microsoft\Windows\CurrentVersion\Run /v TotallyNotShadyStartupItem` and `reg delete HKLM\Software\Microsoft\Windows\CurrentVersion\Run /v TotallyNotShadyStartupItem2`as administrator.
 
 Please note that this will only work if the user is an admin.
